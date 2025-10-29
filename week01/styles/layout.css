@@ -20,3 +20,13 @@ nav a {
     padding: 10px;
     display: block;
 }
+
+main p {
+    max-width: 200px;
+    float: left;
+}
+
+aside p {
+    max-width: 200px;
+    float: right;
+}
