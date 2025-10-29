@@ -1,18 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.navigation { 
-  display: flex;
-  align-items: center;
-  flex: 1 1 auto;
- }
 
-.navigation a {
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: blue;
+    padding: 1opx;
+}
+
+nav a {
+    color: azure;
+    padding: 10px;
     display: block;
-    color: #eee;
-    padding: 0.75rem;
-    text-decoration: none;
-    text-align: center;
-} 
+}
