@@ -71,6 +71,10 @@ main img {
     align-items: center;
     margin:0;
 }
+h1{
+    display:grid;
+    
+}
 
 p {
     margin: 1px;
