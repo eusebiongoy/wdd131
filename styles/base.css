@@ -21,7 +21,7 @@ h1 {
     background-color: #ddd;
     padding: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
-    font-size: 2m;
+    font-size:2rem;
     text-align: center;
 }
 
@@ -63,7 +63,7 @@ nav ul li {
 }
 
 main img {
-    width: 100x;
+    width: 200px;
     height: auto;
     border: 1px solid steelblue;
     padding: 1px;
@@ -110,6 +110,6 @@ footer{
     background-color: lightgray;
     padding: 1rem;
     color: black;
-    font: size 100px;
+    font-size: 2rem;
     text-align: center;
 }
