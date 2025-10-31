@@ -61,6 +61,9 @@ nav ul li {
     flex: 1 0 auto;
 
 }
+main{
+    display:grid;
+}
 
 main img {
     width: 200px;
@@ -73,7 +76,7 @@ main img {
 }
 h1{
     display:grid;
-    
+
 }
 
 p {
@@ -116,9 +119,3 @@ footer{
     color: black;
     font-size: 2rem;
     text-align: center;
-}
-header,main,footer{ 
-    padding: 10px; 
-    text-align: center;
-    color:none;
-}
