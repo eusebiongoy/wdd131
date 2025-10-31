@@ -7,6 +7,15 @@
 body {
     font-family: "Sansita", sans-serif;
 }
+span{
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lightgrey;
+    padding: 1rem;
+    font-size: 2rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    text-align: center;
+}
 
 h1 {
     background-color: #ddd;
@@ -14,6 +23,10 @@ h1 {
     border: 1px solid rgb(0 0 0 / 10%);
     font-size: 2rem;
     text-align: center;
+}
+h2 {
+    color: lightblue;
+    padding: .5rem;
 }
 
 nav {
@@ -45,4 +58,11 @@ nav a:hover {
     nav ul li {
         flex: 1 0 auto;
 
+    }
+    footer {
+            background:lightgrey;
+            color: black;
+            padding: 2%;
+            text-decoration: none;
+            text-align: center;
     }
