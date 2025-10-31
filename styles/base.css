@@ -5,33 +5,29 @@
 }
 
 body {
-    font-family: "Sansita", sans-serif;
+    font-size: 16px;
+    font-family: ubuntu, italic, sans-serif;
 }
-span{
-    display: block;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: lightgrey;
-    padding: 1rem;
-    font-size: 2rem;
-    border: 1px solid rgb(0 0 0 / 10%);
+
+header {
     text-align: center;
+    background-color: lightgray;
+    padding: 1rem;
+    color: black;
+    font-size: 2rem;
 }
 
 h1 {
     background-color: #ddd;
     padding: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
-    font-size: 2rem;
+    font-size: 2m;
     text-align: center;
-}
-h2 {
-    color: lightblue;
-    padding: .5rem;
 }
 
 nav {
     background-color: #36454f;
-    margin:auto;
+    margin: 0 auto;
 }
 
 nav ul {
@@ -50,19 +46,70 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.active {
+    color: yellow;
+}
+
+
 @media (min-width: 640px) {}
-    nav ul {
-        display: flex;
-    }
 
-    nav ul li {
-        flex: 1 0 auto;
+nav ul {
+    display: flex;
+}
 
-    }
-    footer {
-            background:lightgrey;
-            color: black;
-            padding: 2%;
-            text-decoration: none;
-            text-align: center;
-    }
+nav ul li {
+    flex: 1 0 auto;
+
+}
+
+main img {
+    width: 100x;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 1px;
+    float: right;
+    align-items: center;
+    margin:0;
+}
+
+p {
+    margin: 1px;
+    text-align: left;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-section .right-section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+aside {
+    width: 20em;
+    text-align: center;
+    position: relative;
+}
+
+aside img {
+    width: 300px;
+    height: auto;
+    float: left;
+}
+
+p {
+    padding:0.8em;
+}
+footer{
+    text-align: center;
+    background-color: lightgray;
+    padding: 1rem;
+    color: black;
+    font: size 100px;
+    text-align: center;
+}
