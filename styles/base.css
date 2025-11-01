@@ -24,6 +24,7 @@ header {
 }
 
 h1 {
+    display: grid;
     background-color: #ddd;
     padding: 1rem;
     border: 1px solid bisque;
@@ -38,6 +39,7 @@ nav {
 
 nav ul {
     list-style-type: none;
+    display: flex;
 }
 
 nav a {
@@ -59,9 +61,6 @@ nav a:hover {
 
 @media (min-width: 640px) {}
 
-nav ul {
-    display: flex;
-}
 
 nav ul li {
     flex: 1 0 auto;
@@ -80,14 +79,11 @@ main img {
     align-items: center;
     margin:0;
 }
-h1{
-    display:grid;
-
-}
 
 p {
     margin: 1px;
     text-align: left;
+    padding: 0.8em;
 
 }
 
@@ -115,9 +111,6 @@ aside img {
     float: left;
 }
 
-p {
-    padding:0.8em;
-}
 footer p{
     text-align: center;
     background-color: lightgray;
