@@ -112,11 +112,9 @@ aside img {
 p {
     padding:0.8em;
 }
-footer{
+footer p{
     text-align: center;
     background-color: lightgray;
-    padding: 1rem;
     color: black;
-    font-size: 2rem;
-    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
