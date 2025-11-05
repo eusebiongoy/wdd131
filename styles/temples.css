@@ -1,19 +1,35 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-h1 {
-    text-align: center;
-    font-family: times, serif;
-    font-size: 2rem;
-    margin-left: 1rem;
+
+body {
+    font-family: Roboto, sans-serif;
 }
-main{
-    max-width: 800px;
-    margin: auto;
+header {
+    background-color: #bbb;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
 }
 
+header,
+main {
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+nav {
+    
+    margin: 2rem auto;
+    background-color: #36454f;
+}
 #menu {
     font-size: 1.5rem;
     border: 0;
@@ -23,29 +39,17 @@ main{
     top: 10px;
     right: 10px;
 }
-header {
-    background-color: #bbb;
-    display: grid;
-    grid-gap: 1rem;
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 30px #333;
-    font-size: 1rem;
-}
-header p{
-    font-size: 2rem;
-    color: black;
-}
-main{
-    max-width: 800px;
-    margin: 0 auto;
+
+#menu::before {
+    content: "☰";
 }
 
-
-nav {
-    background-color: midnightblue;
+#menu.open::before {
+    content: "X";
 }
-
+.open a {
+    display: block;
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -62,22 +66,48 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline double;
+    text-decoration: underline;
     background-color: #eee;
     color: #000;
 }
 
 .active {
-    color: rgb(7, 238, 103);
+    color: yellow;
 }
 
+/* Larger Views ******************************/
 @media (min-width: 740px) {
     header {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
 }
+
+h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    background-color: #333;
+    text-align: center;
+    font-family: 'Acme', Arial, sans-serif;
+    color: #fff;
+}
+
+section {
+    margin: 1rem auto;
+    max-width: 960px;
+    padding: .5rem;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -96,29 +126,16 @@ img {
 }
 
 figcaption {
-    font-size: smaller;
+    font-size: medium;
 }
 
+/* hover effect */
 .hover:hover {
     box-shadow: 0 0 50px #333;
 }
-    nav ul {
-        justify-content: flex-end;
-        flex-direction: row;
-    }
-
-    nav a {
-        flex: 1 1 100%;
-    }
-
-#menu::before {
-    content: "☰";
-}
-
-
 footer p {
     text-align: center;
-    background-color: rgb(76, 97, 76);
+    background-color: lightgray;
     color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
