@@ -14,6 +14,13 @@ header {
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 30px #333;
+
+}
+header p{
+    background-color:#36454f;
+    text-align: left;
+    padding: 1rem;
+    color: blanchedalmond;
 }
 
 header,
