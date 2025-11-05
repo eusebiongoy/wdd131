@@ -36,10 +36,6 @@ header p{
     font-size: 2rem;
     color: black;
 }
-header,
-main {
-    margin: 0 auto;
-}
 main{
     max-width: 800px;
     margin: 0 auto;
