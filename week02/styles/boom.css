@@ -46,7 +46,6 @@ button {
 .list {
     padding: 0.5rem;
 }
-
 ul {
     margin: 1rem;
     list-style: none;
@@ -62,7 +61,6 @@ li {
     h1 {
         font-size: 2rem;
     }
-
     main {
         width: 320px;
     }

@@ -1,19 +1,25 @@
+// select the input (assumes <input id="favchap">), the first button, and the first ul
+const input = document.querySelector("#favchap");
+const button = document.querySelector("button");
+const list = document.querySelector("ul");
 
-const input = document.querySelector('h1');
-const button = document.querySelector('button');
-const list = document.querySelector('#main'); // you need to fill in the blank to reference the HTML element that is a unordered list element.
-const li = document.createElement('li');
-const deleteButton = document.createElement('button')
-button.addEventListener('click', function () {
-   if(input.value.trim() !== '') {
+button.addEventListener("click", function () {
+   console.log("Button was clicked!");
+   if (input && input.value.trim() !== "") {
+      const li = document.createElement("li");
       li.textContent = input.value;
-      deleteButton.textContent = 'x';
+
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = "X";
+      deleteButton.addEventListener("click", function () {
+         li.remove();
+         input.focus()
+      });
+
       li.append(deleteButton);
-      list.append(li);
-      input.value = '';
+      if (list) list.append(li);
+      input.value = "";
+   } else {
+      alert("Please enter a chapter name!");
    }
-});
-deleteButton.addEventListener('click', function () {
-    list.removeChild(li);
-    input.focus();
 });
