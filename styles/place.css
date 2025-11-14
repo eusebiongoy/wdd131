@@ -12,15 +12,14 @@ body {
 h1 {
     font-size: 2rem;
     padding: 1rem;
-    background-color: lightblue;
+    background-color: red;
     text-align: center;
     font-family: 'Acme', Arial, sans-serif;
     color: yellow;
 }
 
-
-  @media (max-width: 600px) {
-      body {
-          background-color: lightgray;
-      }
-  }
+@media(max-width:1500px){
+    body{
+        background-color: lightblue;
+    }
+}
