@@ -18,8 +18,34 @@ h1 {
     color: yellow;
 }
 
-@media(max-width:1500px){
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-section .right-section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+@media(min-width:600px){
     body{
         background-color: lightblue;
     }
+}
+
+.hero-section picture{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+    background-color: red;
+    color: yellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
