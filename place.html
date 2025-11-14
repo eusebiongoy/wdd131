@@ -1,60 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Eusebio Ngoy Banza">
-    <title>The DR. Congo</title>
-    <script src="scripts/place.js" defer></script>
-    
+    <title>Country home page</title>
     <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
 </head>
-
-<li>
-    <header>
-        <h1>The Democratic Republic of Congo</h1>
-    </header>
-
+<body>
     <main>
         <div class="hero">
-            <img src="images/okapi.webp" alt="okapi" width="600" height="500">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <img src="images/hero-small.webp" alt="parc kahuzi biega" width="1000" height="500">
+            </picture>
         </div>
-        <div class="box">
-            <h2>Data</h2>
-            <ul>
-                <li><a>Area: 2345 millions sq Km</a></li>
-                <li><a>population: 114 060 816</a></li>
-                <li><a>Capital: Kinshasa</a></li>
-                <li><a>Languages: French, Lingala, Swahili</a></li>
-                <li><a>Currency: Franc Congolais</a></li>
-                <li><a>Time Zone: UTC +2</a></li>
-                <li><a>Calling code: +243</a></li>
-                <li><a>Internet TDL: CD</a></li>
-            </ul>
-        </div>
-            
-        <div class="box">
-            <h2>Weather</h2>
-            <img class="hero" src="images/weather 1.svg">
-            <ul>
-                <li><a>Temperature: 19°C</a></li>
-                <li><a>Condition: Cloudy</a></li>
-                <li><a>Wind: 10km/h</a></li>
-                <li><a>Wind Chill: 20 - 22°C</a></li>
-            </ul>
-        </div>
-    <footer>
-        <p>&copy;
-            <span id="currentyear"></span>&#10070; Eusebio Ngoy &#10070; Lubumbashi, DR. Congo
-        </p>
-        <p></p>
-    </footer>
+    </main>
+    <footer></footer>
+    
 </body>
-
 </html>
