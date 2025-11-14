@@ -47,7 +47,7 @@ h1 {
 }
 
 .active::after {
-content  :"";
+content  :"⛅";
 }
 
 footer p {
