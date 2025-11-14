@@ -1,31 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-:root{
-    --primary-color: navy;
-    --font-family: Arial, sans-serif;
-    --background-color: #f8f9fa;
-    
-    }
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-    
-h1 {
-    font-size: 2rem;
-    padding: 1rem;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-}
-footer{
-    text-align: center;
-    background-color: black;
-    color: blanchedalmond;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
 }
