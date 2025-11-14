@@ -1,0 +1,1 @@
+document.getElementById("lastModifiedInfo").innerHTML = "Last updated: " + lastModifiedDate;

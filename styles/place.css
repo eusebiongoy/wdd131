@@ -4,6 +4,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --primary-color: yellow;
+    --secondary-color:red;
+}
 body {
     margin: 0;
     padding: 0;
@@ -12,10 +16,10 @@ body {
 h1 {
     font-size: 2rem;
     padding: 1rem;
-    background-color: red;
+    background-color: var(--secondary-color);
     text-align: center;
     font-family: 'Acme', Arial, sans-serif;
-    color: yellow;
+    color: var(--primary-color);
 }
 
 .container {
@@ -45,7 +49,7 @@ h1 {
 footer p {
     text-align: center;
     font-size: 1rem;
-    background-color: red;
-    color: yellow;
+    background-color:var(--secondary-color);
+    color: var(--primary-color);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
