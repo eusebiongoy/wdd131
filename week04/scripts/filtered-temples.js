@@ -55,5 +55,26 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add more temple objects here...
+    {
+        templeName: "Johannesburg South Africa Temple",
+        location: "Johannesburg South Africa",
+        dedicated: "1985, August, 25", 
+        area: 19184,
+        imageUri: "https://churchofjesuschristtemples.org/assets/img/temples/johannesburg-south-africa-temple/johannesburg-south-africa-temple-22475-main.jpg"
+    },
+    {
+        templeName: "Kinshasa, Democratic Republic of the Congo Temple",
+        location: "Kinshasa Democratic Republic of Congo",
+        dedicated: "2019, April, 14",
+        area: 12000,
+        imageUri: "https://churchofjesuschristtemples.org/assets/img/temples/kinshasa-democratic-republic-of-the-congo-temple/kinshasa-democratic-republic-of-the-congo-temple-3533-main.jpg"
+    },
+    {
+        templeName: "Brigham City Utah Temple",
+        location: "Brigham City Utah",
+        dedicated: "2012, september, 23",
+        area: 36000,
+        imageUri: "https://churchofjesuschristtemples.org/assets/img/temples/brigham-city-utah-temple/brigham-city-utah-temple-39612-main.jpg",
+    }
 ];
+document.getElementById("lastModified").innerHTML = document.lastModified;
