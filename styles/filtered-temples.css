@@ -82,6 +82,16 @@ nav a:hover {
 .active {
     color: yellow;
 }
+.container h3{
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    
+}
+.container p{
+    text-align: center;
+    font-size: .7rem;
+}
 
 /* Larger Views ******************************/
 @media (min-width: 740px) {
@@ -110,10 +120,6 @@ h1 {
     box-shadow: 0 0 30px #333;
     text-align: center;
 }
-picture h3 p{
-    text-align: center;
-}
-
 div {
     margin: 1rem auto;
     max-width: 900px;
@@ -127,14 +133,14 @@ div {
     place-items: center;
 }
 
-figure {
-    background-color: beige;
+.card {
+    background-color: grey;
 }
 
 img {
     width: 100%;
     background-color: #000;
-        animation: fade 15s;
+    animation: fade 15s;
     }
     
     @keyframes fade {
@@ -147,11 +153,7 @@ img {
         }
     }
 
-figcaption {
-    font-size: medium;
-}
 
-/* hover effect */
 .hover:hover {
     box-shadow: 0 0 50px #333;
 }

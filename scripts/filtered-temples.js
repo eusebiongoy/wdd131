@@ -1,4 +1,6 @@
-let d = new Date();
+document.getElementById("currentYear").innerHTML = 'copy;${d.getFullYear()}';
+document.querySelector('#lastModified').textContent = 'Last Modified: ${document.lastModified}';
+
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -78,25 +80,30 @@ const temples = [
         imageUri: "https://churchofjesuschristtemples.org/assets/img/temples/brigham-city-utah-temple/brigham-city-utah-temple-39612-main.jpg",
     }
 ];
-createTempleCard();
-function createTempleCard() {
-    temples.forEach(temple (
-        
-        let Card - document.createElement("section");
-        let name - document.createElement("h3");
-        let location - document.createElement("p"); 
-        let dedication - document.createElement("p");
-        let area= document.createElement("p");
-        let img = document.createElement("img");
+
+createTempleCard(temples);
+const oldLink = document.querySelector("#old");
+oldLink.addEventListener("click", (
+    createTempleCard = temples.filter(temples-> !temples.dedicated.includes("before 1900")))
+)
+function createTempleCard(filteredTemples) {
+    document.querySelector('.container').innerHTML = "";
+    filteredTemples.forEach('temples')(
+        let Card = document.createElement("section");
+    let name = document.createElement("h3");
+    let location = document.createElement("p");
+    let dedication = document.createElement("p");
+    let area = document.createElement("p");
+    let img = document.createElement("img");
     
-        name.textContent -  temple.templeName;
-        location.innerHTML - '<span class="label">Location:</span> ${temple.location}';
-        dedication.innerHTML -  '<span class="label">Dedicated:</span> ${temple.dedicated}';
-        area.innerHTML - '<span class="label">Size:</span> ${temple.area} sq ft';
+    name.textContent - temple.templeName;
+    location.innerHTML - '<span class="label">Location:</span> ${temple.location}';
+    dedication.innerHTML - '<span class="label">Dedicated:</span> ${temple.dedicated}';
+    area.innerHTML - '<span class="label">Size:</span> ${temple.area} sq ft';
         
-        img.setAttribute("src", temple.imgurl);
-        img.setAttribute("alt", "${temple.templeName} Temple");
-        img.setAttribute("loading", "lazy");
+    img.setAttribute("src", temple.imgurl);
+    img.setAttribute("alt", "${temple.templeName} Temple");
+    img.setAttribute("loading", "lazy");
     
     card.appendChild(name);
     card.appendChild(location);
@@ -104,7 +111,6 @@ function createTempleCard() {
     card.appendChild(area);
     card.appendChild(img);
     
-    document.querySelector(".res-grid").appendChild(card);
-    ));
+    document.querySelector(".container").appendChild(card);
+    )
 }
-document.getElementById("lastModified").innerHTML = document.lastModified;
