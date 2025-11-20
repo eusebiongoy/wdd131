@@ -114,7 +114,7 @@ picture h3 p{
     text-align: center;
 }
 
-section {
+div {
     margin: 1rem auto;
     max-width: 900px;
     padding: .5rem;

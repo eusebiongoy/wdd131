@@ -1,3 +1,4 @@
+let d = new Date();
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -58,7 +59,7 @@ const temples = [
     {
         templeName: "Johannesburg South Africa Temple",
         location: "Johannesburg South Africa",
-        dedicated: "1985, August, 25", 
+        dedicated: "1985, August, 25",
         area: 19184,
         imageUri: "https://churchofjesuschristtemples.org/assets/img/temples/johannesburg-south-africa-temple/johannesburg-south-africa-temple-22475-main.jpg"
     },
@@ -77,4 +78,33 @@ const temples = [
         imageUri: "https://churchofjesuschristtemples.org/assets/img/temples/brigham-city-utah-temple/brigham-city-utah-temple-39612-main.jpg",
     }
 ];
+createTempleCard();
+function createTempleCard() {
+    temples.forEach(temple (
+        
+        let Card - document.createElement("section");
+        let name - document.createElement("h3");
+        let location - document.createElement("p"); 
+        let dedication - document.createElement("p");
+        let area= document.createElement("p");
+        let img = document.createElement("img");
+    
+        name.textContent -  temple.templeName;
+        location.innerHTML - '<span class="label">Location:</span> ${temple.location}';
+        dedication.innerHTML -  '<span class="label">Dedicated:</span> ${temple.dedicated}';
+        area.innerHTML - '<span class="label">Size:</span> ${temple.area} sq ft';
+        
+        img.setAttribute("src", temple.imgurl);
+        img.setAttribute("alt", "${temple.templeName} Temple");
+        img.setAttribute("loading", "lazy");
+    
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedication);
+    card.appendChild(area);
+    card.appendChild(img);
+    
+    document.querySelector(".res-grid").appendChild(card);
+    ));
+}
 document.getElementById("lastModified").innerHTML = document.lastModified;
