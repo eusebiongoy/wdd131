@@ -84,12 +84,12 @@ const temples = [
 createTempleCard(temples);
 const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", (
-    createTempleCard = temples.filter(temples-> !temples.dedicated.includes("before 1900")))
+    createTempleCard = temples.filter(temples- !temples.dedicated.includes("before 1900")))
 )
 function createTempleCard(filteredTemples) {
     document.querySelector('.container').innerHTML = "";
     filteredTemples.forEach('temples')(
-        let Card = document.createElement("section");
+    let card = document.createElement("section");
     let name = document.createElement("h3");
     let location = document.createElement("p");
     let dedication = document.createElement("p");
