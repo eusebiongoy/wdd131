@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: ubuntu, italic, sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: skyblue;
+    padding: 10px;
+}
+
+nav a {
+
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+h1 {
+    color: black;
+    padding: .5rem;
+}

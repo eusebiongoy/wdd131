@@ -114,3 +114,5 @@ function createTempleCard(filteredTemples) {
     document.querySelector(".container").appendChild(card);
     )
 }
+
+document.getElementById("lastModified").innerHTML = document.lastModified;
