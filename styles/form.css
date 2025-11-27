@@ -55,8 +55,8 @@ input[type="radio"] {
 
 .stars {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: left;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .stars>label {
@@ -96,7 +96,8 @@ input[type=checkbox] {
 }
 
 .inline {
-    display: inline;
+    display: flex;
+    flex-direction: row;
 }
 
 footer p {

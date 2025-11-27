@@ -18,57 +18,60 @@
     <header>Product</header>
     <main class="box">
     <h1>Product Review</h1>
-    <form action="review.html" method="get">
-        <div class="product box">
-            <label for="product">Product Name</label>
-        </div>
-        <select name="product" id="product-select" required>
-            <option value="" selected disabled>Choose a product </option>
-            <option value="item1">Product A</option>
-            <option value="item2">Product B</option>
-            <option value="item3">Product C</option>
-        </select>
-                <label>Overall Rating</label>
-                <div class="stars">
-                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
-                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
-                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
-                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
-                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
-                </div>
-
+        <form action="review.html" method="get">
+            <div class="product box">
+                <label for="product">Product Name</label>
+            </div>
+            <select required>
+                <option value="" selected disabled>Choose a product... </option>
+                <option value="item1">Product A</option>
+                <option value="item2">Product B</option>
+                <option value="item3">Product C</option>
+            </select>
             <div>
-                <label for="installationDate">Date of Installation:</label>
-                <input type="date" id="installationDate" name="installationDate" required>
+                <label>Overall Rating</label>
             </div>
-            <div class="checkbox">
-                <label for="checkbox">which features did you find useful in the product (check all that apply)</label>
-            <div class="vcentered">
-                <label for="task" data-content="Completed the Module" class="inline">Durability</label>
-                <input type="checkbox" id="durability" name="durability" value="durability" required>
+            <div class="stars">
+                <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
             </div>
-            <div class="vcentered">
-                <label for="task" data-content="Completed the Module" class="inline">Ease of Use</label>
-                <input type="checkbox" id="ease" name="ease" value="ease of use" required>
-            </div>
-            <div class="vcentered">
-                <label for="task" data-content="Completed the Module" class="inline">Performance</label>
-                <input type="checkbox" id="performance" name="performance" value="performance" required>
-            </div>
-            <div class="vcentered">
-                <label for="task" data-content="Completed the Module" class="inline">Design</label>
-                <input type="checkbox" id="design" name="design" value="design" required>
-            </div>
-           <div class="textarea">
-                <label for="textarea">Written Review(optional)</label>
-                <textarea id="wrap" name="text" rows="4"></textarea>
-           </div>
 
-            <div class="name">
-                <label for="name">Your Name (optional)</label>
-                <input type="text" id="name" name="name">
+                <div>
+                    <label for="installationDate">Date of Installation:</label>
+                    <input type="date" id="installationDate" name="installationDate" required>
+                </div>
+                <div class="checkbox">
+                    <label for="checkbox">which features did you find useful in the product (check all that apply)</label>
+                </div>
+                <div class="vcentered">
+                    <label for="task" data-content="Completed the Module" class="inline">Durability</label>
+                    <input type="checkbox" id="durability" name="durability" value="durability" required>
+                </div>
+                <div class="vcentered">
+                    <label for="task" data-content="Completed the Module" class="inline">Ease of Use</label>
+                    <input type="checkbox" id="ease" name="ease" value="ease of use" required>
+                </div>
+                <div class="vcentered">
+                    <label for="task" data-content="Completed the Module" class="inline">Performance</label>
+                    <input type="product-performance" id="performance" name="performance" value="performance" required>
+                </div>
+                <div class="vcentered">
+                    <label for="design-product" data-content="Completed the Module" class="inline">Design</label>
+                    <input type="checkbox" id="design" name="design" value="design" required>
+                </div>
+            <div class="textarea">
+                    <label for="textarea">Written Review(optional)</label>
+                    <textarea id="wrap" name="text" rows="4"></textarea>
             </div>
-        <button type="submit">Post Review</button>
+
+                <div class="your-name">
+                    <label for="your-name">Your Name (optional)</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <button type="submit">Post Review</button>
         </form>
     </main>
     <footer>
