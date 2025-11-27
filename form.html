@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" Content="Dynamic Fundamentals Web - Eusebio Ngoy B.">
+    <meta name="Author" content="Eusebio Ngoy Banza">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main class="box">
+        <form action="review.html" method="get">
+            <h4>Product Name</h4>
+            <select id="mySelection" name="userOption" required>
+                <option value="" selected disabled>choose a Product</option>
+            </select>
+            <h4>Overall Rating</h4>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+            <h4>Date of Installation</h4>
+                <div class="Date">
+                    <label for="installationDate"></label>
+                    <input type="date" id="installationDate" name="installationDate" required>
+                </div>
+            <p>Which features did you find useful in the product? (check all that apply)</p>
+            <input type="checkbox" id="option1" name="preferences" value="email_notifications">
+            <label for="option1">Durability</label>
+            
+            <input type="checkbox" id="option2" name="preferences" value="sms_alerts" checked>
+            <label for="option2">Easy of Use</label>
+            
+            <input type="checkbox" id="option3" name="newsletter" value="tech_news">
+            <label for="option3">Performance</label>
+
+            <input type="checkbox" id="option3" name="newsletter" value="tech_news">
+            <label for="option3">Design</label>
+
+            <h4>Written Review(optional)</h4>
+            <label for="reviewContent"></label>
+            <textarea id="reviewContent" name="userReview" rows="5" cols="60"></textarea>
+
+            <h4>Your Name(optional)</h4>
+            <label for="reviewContent"></label>
+            <textarea id="reviewContent" name="userReview" rows="1" cols="60"></textarea>
+
+            <form>
+                <labe for="postReview"></labe>
+                <input type="submit" value="Post Review">
+            </form>
+        </form>
+           
+    </main>
+    <footer>
+        <p>&copy; 2025
+            <span id="year"></span>&#10070; Eusebio Ngoy &#10070; Lubumbashi, DR. Congo
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
