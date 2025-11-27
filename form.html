@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Wdd131: Dynamic Web Fundamentals - Eusebio, Ngoy B.">
 <meta name="author" content="Eusebio, Ngoy B.">
-<title>HTML Form</title>
+<title>Product Review</title>
 <link rel="stylesheet" href="styles/form.css">
 <script src="scripts/form.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,17 +15,19 @@
     rel="stylesheet">
 </head>
 <body>
+    <header>Product</header>
     <main class="box">
-        <h1>Product Review</h1>
-        <form action="review.html" method="get">
-            <div class="product box">
-                <label for="product">Product Name</label>
-                <select name="product" id="product-select">
-                    <option value="" selected disabled>Choose a product </option>
-                    <option value="item1">Product A</option>
-                    <option value="item2">Product B</option>
-                    <option value="item3">Product C</option>
-                </select>
+    <h1>Product Review</h1>
+    <form action="review.html" method="get">
+        <div class="product box">
+            <label for="product">Product Name</label>
+        </div>
+        <select name="product" id="product-select">
+            <option value="" selected disabled>Choose a product </option>
+            <option value="item1">Product A</option>
+            <option value="item2">Product B</option>
+            <option value="item3">Product C</option>
+        </select>
                 <label>Overall Rating</label>
                 <div class="stars">
                     <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
@@ -59,14 +61,14 @@
             </div>
            <div class="textarea">
                 <label for="textarea">Written Review(optional)</label>
-                <textarea id="feedback" name="feedback" rows="4" columns="7"></textarea>
+                <textarea id="textarea" name="textarea" rows="4" columns="7"></textarea>
            </div>
 
             <div class="name">
                 <label for="name">Your Name (optional)</label>
                 <input type="text" id="name" name="name">
             </div>
-            <button type="submit">Post Review</button>
+        <button type="submit">Post Review</button>
         </form>
     </main>
     <footer>

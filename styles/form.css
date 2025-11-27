@@ -6,7 +6,6 @@
 
 main {
     max-width: 500px;
-    background-color: none;
     color: black;
 }
 
@@ -18,7 +17,6 @@ form {
     background-color: #ddd;
     color: #111;
 }
-
 
 input,
 textarea,
@@ -80,9 +78,6 @@ input[type="radio"] {
     content: "\2606";
 }
 
-.stars input:checked~label::before {
-    content: "\2605";
-}
 input[type=checkbox] {
     margin-left: 10px;
 }
@@ -100,21 +95,7 @@ input[type=checkbox] {
 .inline {
     display: inline;
 }
-.quiz-item {
-    border: none;
-}
 
-code {
-    display: block;
-    background: #000;
-    color: #fff;
-}
-
-.box {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 /10%);
-    padding: 1rem;
-}
 footer p {
     text-align: left;
     font-size: 1rem;
