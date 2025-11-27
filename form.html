@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" Content="Dynamic Fundamentals Web - Eusebio Ngoy B.">
-    <meta name="Author" content="Eusebio Ngoy Banza">
-    <title>Form</title>
-    <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Wdd131: Dynamic Web Fundamentals - Eusebio, Ngoy B.">
+<meta name="author" content="Eusebio, Ngoy B.">
+<title>HTML Form</title>
+<link rel="stylesheet" href="styles/form.css">
+<script src="scripts/form.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Product Review</h1>
-    </header>
     <main class="box">
+        <h1>Product Review</h1>
         <form action="review.html" method="get">
-            <h4>Product Name</h4>
-            <select id="mySelection" name="userOption" required>
-                <option value="" selected disabled>choose a Product</option>
-            </select>
-            <h4>Overall Rating</h4>
+            <div class="product box">
+                <label for="product">Product Name</label>
+                <select name="product" id="product-select">
+                    <option value="" selected disabled>Choose a product </option>
+                    <option value="item1">Product A</option>
+                    <option value="item2">Product B</option>
+                    <option value="item3">Product C</option>
+                </select>
+                <label>Overall Rating</label>
                 <div class="stars">
                     <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
                     <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
@@ -27,38 +34,40 @@
                     <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
                     <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
                 </div>
-            <h4>Date of Installation</h4>
-                <div class="Date">
-                    <label for="installationDate"></label>
-                    <input type="date" id="installationDate" name="installationDate" required>
-                </div>
-            <p>Which features did you find useful in the product? (check all that apply)</p>
-            <input type="checkbox" id="option1" name="preferences" value="email_notifications">
-            <label for="option1">Durability</label>
-            
-            <input type="checkbox" id="option2" name="preferences" value="sms_alerts" checked>
-            <label for="option2">Easy of Use</label>
-            
-            <input type="checkbox" id="option3" name="newsletter" value="tech_news">
-            <label for="option3">Performance</label>
 
-            <input type="checkbox" id="option3" name="newsletter" value="tech_news">
-            <label for="option3">Design</label>
+            <div>
+                <label for="installationDate">Date of Installation:</label>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </div>
+            <div class="checkbox">
+                <label for="checkbox">which features did you find useful in the product (check all that apply)</label>
+            <div class="vcentered">
+                <label for="task" data-content="Completed the Module" class="inline">Durability</label>
+                <input type="checkbox" id="task" name="task" value="durability">
+            </div>
+            <div class="vcentered">
+                <label for="task" data-content="Completed the Module" class="inline">Ease of Use</label>
+                <input type="checkbox" id="task" name="task" value="ease of use">
+            </div>
+            <div class="vcentered">
+                <label for="task" data-content="Completed the Module" class="inline">Performance</label>
+                <input type="checkbox" id="task" name="task" value="performance">
+            </div>
+            <div class="vcentered">
+                <label for="task" data-content="Completed the Module" class="inline">Design</label>
+                <input type="checkbox" id="task" name="task" value="design">
+            </div>
+           <div class="textarea">
+                <label for="textarea">Written Review(optional)</label>
+                <textarea id="feedback" name="feedback" rows="4" columns="7"></textarea>
+           </div>
 
-            <h4>Written Review(optional)</h4>
-            <label for="reviewContent"></label>
-            <textarea id="reviewContent" name="userReview" rows="5" cols="60"></textarea>
-
-            <h4>Your Name(optional)</h4>
-            <label for="reviewContent"></label>
-            <textarea id="reviewContent" name="userReview" rows="1" cols="60"></textarea>
-
-            <form>
-                <labe for="postReview"></labe>
-                <input type="submit" value="Post Review">
-            </form>
+            <div class="name">
+                <label for="name">Your Name (optional)</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <button type="submit">Post Review</button>
         </form>
-           
     </main>
     <footer>
         <p>&copy; 2025
