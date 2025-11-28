@@ -1,85 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Wdd131: Dynamic Web Fundamentals - Eusebio, Ngoy B.">
-<meta name="author" content="Eusebio, Ngoy B.">
-<title>Product Review</title>
-<link rel="stylesheet" href="styles/form.css">
-<script src="scripts/form.js" defer></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Wdd131: Dynamic Web Fundamentals - Eusebio, Ngoy B.">
+        <meta name="author" content="Eusebio, Ngoy B.">
+        <title>Product Review</title>
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <script src="scripts/form.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet">
+    </head>
 <body>
-    <header>Product</header>
-    <main class="box">
-    <h1>Product Review</h1>
-        <form action="review.html" method="get">
-            <div class="product box">
-                <label for="product">Product Name</label>
-            </div>
-            <select id="choose product" name="product" required>
-                <option value="choose a product" selected disabled>Choose a product... </option>
-                <option value="item1">Product A</option>
-                <option value="item2">Product B</option>
-                <option value="item3">Product C</option>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+<main class="box">
+    <form action="review.html" method="get">
+        <div class="product-item box">
+            <label for="product-item">Product Name</label>
+            <input type="text" id="product-item" name="product-item">
+        </div>
+
+        <div class="quiz-item box">
+            <label for="q2">2. How are id and class attributes selected in CSS?</label>
+            <textarea id="text" name="q2"></textarea>
+        </div>
+
+        <div class="quiz-item box">
+            <label for="q3">3. Which of the following is a valid CSS comment?</label>
+            <select id="text" name="q3">
+                <option value="" selected disabled>Choose one ...</option>
+                <option value="a">A. &lt;!--This is a comment--&gt;</option>
+                <option value="b">B. /*This is a comment*/</option>
+                <option value="c">C. // This is a comment</option>
             </select>
-            <div>
-                <label>Overall Rating</label>
-            </div>
-            <div class="stars">
-                <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
-                <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
-                <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
-                <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
-                <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
-            </div>
+        </div>
 
-                <div>
-                    <label for="installationDate">Date of Installation:</label>
-                    <input type="date" id="installationDate" name="installationDate" required>
-                </div>
-                <div class="checkbox">
-                    <label for="checkbox">which features did you find useful in the product (check all that apply)</label>
-                </div>
-                <div class="vcentered">
-                    <label for="task" data-content="Completed the Module" class="inline">Durability</label>
-                    <input type="checkbox" id="product-durability" name="durability" value="A" required>
-                </div>
-                <div class="vcentered">
-                    <label for="task" data-content="Completed the Module" class="inline">Ease of Use</label>
-                    <input type="checkbox" id="ease-used" name="ease" value="B" required>
-                </div>
-                <div class="vcentered">
-                    <label for="task" data-content="Completed the Module" class="inline">Performance</label>
-                    <input type="checkbox" id="performance" name="performance" value="C" required>
-                </div>
-                <div class="vcentered">
-                    <label for="task" data-content="Completed the Module" class="inline">Design</label>
-                    <input type="checkbox" id="design-product" name="design" value="D" required>
-                </div>
-                
-            <div class="textarea">
-                    <label for="textarea">Written Review(optional)</label>
-                    <textarea id="wrap" name="text" rows="4"></textarea>
-            </div>
-
-                <div class="your-name">
-                    <label for="your-name">Your Name (optional)</label>
-                    <input type="text" id="name" name="name">
-                </div>
-                <button type="submit">Post Review</button>
-        </form>
-    </main>
-    <footer>
-        <p>&copy; 2025
-            <span id="year"></span>&#10070; Eusebio Ngoy &#10070; Lubumbashi, DR. Congo
-        </p>
-        <p id="lastModified"></p>
-    </footer>
+        <div class="quiz-item box">
+            <label for="q4">4. What is the bottom margin given this declaration? </label>
+            <code class="box">margin: 10px 5px 15px </code>
+            <input type="number" id="q4" name="q4">
+        </div>
+        <button type="submit">Submit Quiz</button>
+    </form>
+</main>
 </body>
 </html>

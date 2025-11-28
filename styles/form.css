@@ -6,6 +6,7 @@
 
 main {
     max-width: 500px;
+    background-color: none;
     color: black;
 }
 
@@ -18,10 +19,11 @@ form {
     color: #111;
 }
 
+
 input,
 textarea,
 select,
-button{
+button {
     padding: .75rem;
     width: 350px;
 }
@@ -29,7 +31,7 @@ button{
 button {
     background-color: navy;
     color: #fff;
-    margin: 1rem;
+    margin: 0 auto;
     display: block;
     border-radius: .5px;
     border: 1px solid rgb(0 0 0 /10%);
@@ -45,70 +47,9 @@ code {
 .box {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 /10%);
-    padding: 2rem;
-}
-input[type="radio"] {
-    display: none;
-    position: relative;
-    caret-color: rgba(0, 0, 0, 0);
+    padding: 1rem;
 }
 
-.stars {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.stars>label {
-    color: brown;
-    width: 30px;
-    height: 30px;
-    font-size: 2rem;
-    margin-left: 5px;
-    display: flex;
-    align-items: center;
-    caret-color: rgba(0, 0, 0, 0);
-}
-
-.stars>label:hover {
-    color: #000;
-}
-
-.stars>label::before {
-    content: "\2606";
-}
-
-input[type=checkbox] {
-    margin-left: 10px;
-}
-
-#durability,
-#ease,
-#performance,
-#design {
-    width: 15px;
-    height: 15px;
-}
-
-.vcentered {
-    display: flex;
-    align-items: center;
-}
-
-.inline {
-    display: flex;
-    flex-direction: row;
-}
-@media(min-width:600px) {
-    body {
-        background-color: lightblue;
-        color: black;
-    }
-}
-
-footer p {
-    text-align: left;
-    font-size: 1rem;
-    color: #000;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Verdana', 'sans-serif';
+.quiz-item {
+    border: none;
 }

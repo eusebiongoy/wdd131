@@ -1,17 +1,19 @@
-
-*{
-    padding:0;
+* {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-:root{
+:root {
     --primary-color: yellow;
-    --secondary-color:red;
+    --secondary-color: red;
+
 }
+
 body {
     margin: 0;
     padding: 0;
 }
+
 h1 {
     font-size: 2rem;
     padding: 2rem;
@@ -30,33 +32,36 @@ h1 {
 .left-section .right-section {
     flex: .1;
     margin: 5px;
-    padding:5px;
+    padding: 5px;
     flex-direction: column;
     border: 10px solid #ccc;
-    font: size 5px; ;
+    font: size 5px;
 }
 
-@media(min-width:600px){
-    body{
+@media(min-width:600px) {
+    body {
+
         background-color: lightblue;
     }
 }
 
-.hero-section picture{
+.hero-section picture {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+
     padding: 1rem;
+
 }
 
 .active::after {
-content  :"⛅";
+    content: "⛅";
+
 }
 
 footer p {
     text-align: center;
     font-size: 1rem;
-    background-color:var(--secondary-color);
+    background-color: var(--secondary-color);
     color: var(--primary-color);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Verdana', 'sans-serif';
 }
