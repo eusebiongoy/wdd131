@@ -22,8 +22,8 @@
             <div class="product box">
                 <label for="product">Product Name</label>
             </div>
-            <select required>
-                <option value="" selected disabled>Choose a product... </option>
+            <select id="choose product" name="product" required>
+                <option value="choose a product" selected disabled>Choose a product... </option>
                 <option value="item1">Product A</option>
                 <option value="item2">Product B</option>
                 <option value="item3">Product C</option>
@@ -48,20 +48,21 @@
                 </div>
                 <div class="vcentered">
                     <label for="task" data-content="Completed the Module" class="inline">Durability</label>
-                    <input type="checkbox" id="durability" name="durability" value="durability" required>
+                    <input type="checkbox" id="product-durability" name="durability" value="A" required>
                 </div>
                 <div class="vcentered">
                     <label for="task" data-content="Completed the Module" class="inline">Ease of Use</label>
-                    <input type="checkbox" id="ease" name="ease" value="ease of use" required>
+                    <input type="checkbox" id="ease-used" name="ease" value="B" required>
                 </div>
                 <div class="vcentered">
                     <label for="task" data-content="Completed the Module" class="inline">Performance</label>
-                    <input type="product-performance" id="performance" name="performance" value="performance" required>
+                    <input type="checkbox" id="performance" name="performance" value="C" required>
                 </div>
                 <div class="vcentered">
-                    <label for="design-product" data-content="Completed the Module" class="inline">Design</label>
-                    <input type="checkbox" id="design" name="design" value="design" required>
+                    <label for="task" data-content="Completed the Module" class="inline">Design</label>
+                    <input type="checkbox" id="design-product" name="design" value="D" required>
                 </div>
+                
             <div class="textarea">
                     <label for="textarea">Written Review(optional)</label>
                     <textarea id="wrap" name="text" rows="4"></textarea>
