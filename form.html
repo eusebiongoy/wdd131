@@ -1,51 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Wdd131: Dynamic Web Fundamentals - Eusebio, Ngoy B.">
-        <meta name="author" content="Eusebio, Ngoy B.">
-        <title>Product Review</title>
-        <link rel="stylesheet" href="styles/form.css">
-        <link rel="stylesheet" href="styles/place-large.css">
-        <script src="scripts/form.js" defer></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-            rel="stylesheet">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wdd131: Dynamic Web Fundamentals - Eusebio, Ngoy B.">
+    <meta name="author" content="Eusebio, Ngoy B.">
+    <title>The Country Wireframe</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
 <body>
-    <header>
+    <main class="box">
         <h1>Product Review</h1>
-    </header>
-<main class="box">
-    <form action="review.html" method="get">
-        <div class="quiz-item box">
-            <label for="q3">Product Name</label>
-            <select id="text" name="q3">
-                <option value="" selected disabled>Choose a product ...</option>
-                <option value="a">product 1</option>
-                <option value="b">product 2</option>
-                <option value="c">product 3</option>
-            </select>
-        </div>
+        <form class="box">
+            <div class="quiz-item box">
+                <label for="q3">Product Name</label>
+                <select id="text" name="q3">
+                    <option value="" selected disabled>Choose a product ...</option>
+                    <option value="a">product 1</option>
+                    <option value="b">product 2</option>
+                    <option value="c">product 3</option>
+                </select>
+            </div>
+            <div class="quiz-item box">
+                <label>Overall Rating</label>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+
+            <div class="quiz-item box">
+                <label for="installationDate">Date of installation:</label>
+                <input type="date" id="installationDate" name="installation_date" required>
+            </div>
+
+        <fieldset>
+            <legend>Which features did you find useful in the product?(Check all that apply)</legend>
         
-
-        <div class="quiz-item box">
-            <label for="q2">2. How are id and class attributes selected in CSS?</label>
-            <textarea id="text" name="q2"></textarea>
-        </div>
-
+            <div>
+                <input type="checkbox" id="feature1" name="useful_features" value="durability">
+                <label for="feature1">Durability</label>
+            </div>
         
-
-        <div class="quiz-item box">
-            <label for="q4">4. What is the bottom margin given this declaration? </label>
-            <code class="box">margin: 10px 5px 15px </code>
-            <input type="number" id="q4" name="q4">
+            <div>
+                <input type="checkbox" id="feature2" name="useful_features" value="ease_of_use">
+                <label for="feature2">Ease of Use</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="feature3" name="useful_features" value="performance">
+                <label for="feature3">Performance</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="feature4" name="useful_features" value="design">
+                <label for="feature4">Design</label>
+            </div>
+        </fieldset>
+        <div>
+            <label for="userReview">Your Review (Optional):</label><br>
+            <textarea id="userReview" name="reviewContent" rows="3" cols="10" placeholder=""></textarea> </textarea>
         </div>
-        <button type="submit">Submit Quiz</button>
-    </form>
-</main>
+        <div>
+            <label for="userName">Your Name (optional)</label>
+            <input type="text" id="userName" name="userName">
+        </div>
+            <button type="submit">Post Review</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025
+            <span id="year"></span>&#10070; Eusebio Ngoy &#10070; Lubumbashi, DR. Congo
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
-</html>
+
+</html

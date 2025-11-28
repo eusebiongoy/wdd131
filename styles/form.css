@@ -1,90 +1,94 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-main {
-    max-width: 500px;
-    background-color: none;
-    color: black;
-}
+    main {
+        max-width: 500px;
+        background-color: none;
+        color: black;
+    }
 
-h1 {
-    margin: 1rem;
-}
+    h1 {
+        margin: 1rem;
+    }
 
-form {
-    background-color: #ddd;
-    color: #111;
-}
+    form {
+        background-color: #ddd;
+        color: #111;
+    }
 
 
-input,
-textarea,
-select,
-button {
-    padding: .75rem;
-    width: 350px;
-}
+    input,
+    textarea,
+    select,
+    button {
+        padding: .75rem;
+        width: 350px;
+    }
 
-button {
-    background-color: navy;
-    color: #fff;
-    margin: 0 auto;
-    display: block;
-    border-radius: .5px;
-    border: 1px solid rgb(0 0 0 /10%);
+    button {
+        background-color: navy;
+        color: #fff;
+        margin: 0 auto;
+        display: block;
+        border-radius: .5px;
+        border: 1px solid rgb(0 0 0 /10%);
 
-}
+    }
 
-code {
-    display: block;
-    background: #000;
-    color: #fff;
-}
+    code {
+        display: block;
+        background: #000;
+        color: #fff;
+    }
 
-.box {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 /10%);
-    padding: 1rem;
-}
-.quiz-item {
-    border: none;
-}
+    .box {
+        margin: 1rem;
+        border: 1px solid rgb(0 0 0 /10%);
+        padding: 1rem;
+    }
 
-input[type="radio"] {
-    display: none;
-    position: relative;
-    caret-color: rgba(0, 0, 0, 0);
-}
-
-.stars {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: left;
-}
-
-.stars>label {
-    color: gold;
-    width: 30px;
-    height: 30px;
-    font-size: 2rem;
-    margin-left: 5px;
-    display: flex;
-    align-items: center;
-    caret-color: rgba(0, 0, 0, 0);
-    /* remove blinking cursor*/
-}
-
-.stars>label:hover {
-    color: #000;
-}
-
-.stars>label::before {
-    content: "\2606";
-}
-
-.stars input:checked~label::before {
-    content: "\2605";
-}
+    .quiz-item {
+        border: none;
+    }
+        input[type="radio"] {
+            display: none;
+            position: relative;
+            caret-color: rgba(0, 0, 0, 0);
+        }
+    
+        .stars {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: left;
+        }
+    
+        .stars>label {
+            color: #000;
+            width: 30px;
+            height: 30px;
+            font-size: 2rem;
+            margin-left: 5px;
+            display: flex;
+            align-items: center;
+            caret-color: rgba(0, 0, 0, 0);
+        }
+    
+        .stars>label:hover {
+            color: #000;
+        }
+    
+        .stars>label::before {
+            content: "\2606";
+        }
+    
+        .stars input:checked~label::before {
+            content: "\2605";
+        }
+    footer p {
+        text-align: center;
+        font-size: 1rem;
+        color: #000;
+    }
