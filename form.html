@@ -16,12 +16,14 @@
         rel="stylesheet">
 </head>
 <body>
-    <main class="box">
+    <header>
         <h1>Product Review</h1>
-        <form class="box">
+    </header>
+    <main class="box">
+        <form action="review.html" method="get">
             <div class="quiz-item box">
-                <label for="q3">Product Name</label>
-                <select id="text" name="q3">
+                <label for="product">Product Name</label>
+                <select id="text" name="product" required>
                     <option value="" selected disabled>Choose a product ...</option>
                     <option value="a">product 1</option>
                     <option value="b">product 2</option>
@@ -68,13 +70,13 @@
         </fieldset>
         <div>
             <label for="userReview">Your Review (Optional):</label><br>
-            <textarea id="userReview" name="reviewContent" rows="3" cols="10" placeholder=""></textarea> </textarea>
+            <textarea id="userReview" name="reviewContent" rows="3" cols="10" placeholder=""></textarea>
         </div>
         <div>
             <label for="userName">Your Name (optional)</label>
             <input type="text" id="userName" name="userName">
         </div>
-            <button type="submit">Post Review</button>
+        <button type="submit">Post Review</button>
         </form>
     </main>
     <footer>
@@ -86,4 +88,4 @@
 
 </body>
 
-</html
+</html>

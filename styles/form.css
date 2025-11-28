@@ -1,17 +1,16 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    main {
-        max-width: 500px;
-        background-color: none;
-        color: black;
-    }
+main {
+    max-width: 500px;
+    color: black;
+}
 
-    h1 {
-        margin: 1rem;
+h1 {
+    margin: 1rem;
     }
 
     form {
@@ -86,9 +85,15 @@
     
         .stars input:checked~label::before {
             content: "\2605";
-        }
-    footer p {
-        text-align: center;
-        font-size: 1rem;
-        color: #000;
+}
+    @media(min-width:600px) {
+        body {
+        
+        background-color:gray;
     }
+}
+footer p {
+    text-align: center;
+    font-size: 1rem;
+    color: #000;
+}
