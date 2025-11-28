@@ -3,7 +3,7 @@ const rangevalue = document.getElementById("rangevalue");
 const range = document.getElementById("r");
 
 
-range.addEventListener('input', displayRatingValue);
+range.addEventListener('label', displayRatingValue);
 
 function displayRatingValue() {
     rangevalue.innerHTML = range.value;
