@@ -11,11 +11,13 @@ main {
 
 h1 {
     margin: 1rem;
+    text-align: justify;
     }
 
     form {
         background-color: #ddd;
         color: #111;
+        display: block;
     }
 
 
@@ -49,9 +51,6 @@ h1 {
         padding: 1rem;
     }
 
-    .quiz-item {
-        border: none;
-    }
         input[type="radio"] {
             display: none;
             position: relative;
@@ -86,12 +85,13 @@ h1 {
         .stars input:checked~label::before {
             content: "\2605";
 }
-    @media(min-width:600px) {
+    @media(min-width:500px) {
         body {
         
-        background-color:gray;
+        background-color:white;
     }
 }
+
 footer p {
     text-align: left;
     font-size: 1rem;
