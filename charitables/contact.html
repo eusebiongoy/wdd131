@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eusebio Ngoy Banza">
+    <meta name="Description"
+        content="This page talk about the Charitable, about the works done by this group and some the projects a head">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
+    <script src="" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="the charitable logo" width="128" height="128">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="works.html">Works</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/lovely-meeting.webp" media="(min-width: 1000px)" width="500" height="300">
+                <img src="images/teams.webp" alt="we are together" width="300" height="150">
+            </picture>
+            <h1>The Charitables Contact Us Page</h1>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d125032.60628932969!2d27.5021916!3d-11.6753421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scd!4v1764689246931!5m2!1sen!2scd"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact">
+            <h2>Message Us</h2>
+            <p>202 Munama Street</p>
+            <p>Lubumbashi, Haut Katanga, DR Congo </p>
+            <p>+243 81 71 88 597</p>
+            <p>info@charitables.org</p>
+        </div>
+        <form>
+            <fieldset>
+                <legend>The Charitables NGO</legend>
+
+                <label>Name <input type="text" id="name"></label>
+                <label>Email <input type="email" id="usermail"> </label>
+            </fieldset>
+            <fieldset>
+                <legend>Message Purpose</legend>
+                <label>General Inquiry<input type="radio" id="Inquiry"></label>
+                <label>Reservation Question<input type="radio" id="question"></label>
+                <label>Website Suggestion <input type="radio" id="suggestion"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Message</legend>
+                <textarea id="feedback" name="feedback" rows="5" placeholder=""></textarea>
+                <label for="pet">Please Subscribe me to the monthly newsletter </label>
+                <input type="checkbox" id="pet" name="pet">
+            </fieldset>
+            <button type="submit">Get in Touch!</button>
+        </form>
+
+        <nav class="row">
+            <h2>Welcome to join us</h2>
+        </nav>
+        <nav class="row">
+            <figure>
+                <img src="images/coaching.jpg" alt="employee explaining" width="128" height="128">
+                <figcaption>Employee Profile</figcaption>
+            </figure>
+            <figure>
+                <img src="images/goodwork.jpg" alt="receiving a certificate" width="128" height="128">
+                <figcaption>Employee Profile</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee.jpg" alt="employee profile" width="128" height="128">
+                <figcaption>Employee Profile</figcaption>
+            </figure>
+        </nav>
+    </main>
+    <footer>
+        <p>&copy; 2025
+            <span id="year"></span>&#10070; Eusebio Ngoy &#10070; Lubumbashi, DR. Congo
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

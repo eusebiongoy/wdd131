@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Eusebio Ngoy Banza">
-    <meta name="Purpose" content="This Page Introduce to us the Charitables a group of people that are doing charitable work">
-    <title>The Charitables</title>
+    <meta name="author" content="Eusebio Ngoy Banza">
+    <meta name="Description"
+        content="This page talk about the Charitable, about the works done by this group and some the projects a head">
+    <title>Home Page</title>
     <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
+    <script src="" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,21 +17,45 @@
         rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="images/charitable.jpg" alt="The Charitables logo" width="150" height="100">
+    <p>THE HEADER</p>
+    <header> 
+        <div class="logo-box">
+            <img src="images/charitable.jpg" alt="the charitable" width="128" height="128">
+        </div>
         <nav>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="works.html"> Our Realization</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="works.html">Works</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
+
     </header>
+    <P>THE MAIN</P>
     <main>
-        <h1>The Charitables</h1>
+        <div id="banner-box">
+            <section class="banner">
+                <h1>The Charitables</h1>
+                <p>The purpose of this page is to reveal to light the charitable group that assist people in various issue and this page is to invite others to join and work with the group</p>
+                <img src="#/100/300" alt="#" width="500" height="300">
+            </section>
+
+        </div>
+        <div class="scenarios">
+            <p>Who are we?</p>
+            <p>What is our purpose?</p>
+            <p>What do we do?</p>
+        </div>
+
+
     </main>
-    <footer></footer>
+    <p>THE FOOTER</p>
+    <footer>
+        <p>&copy; 2025
+            <span id="year"></span>&#10070; Eusebio Ngoy &#10070; Lubumbashi, DR. Congo
+        </p>
+        <p id="lastModified"></p>
+        
+    </footer>
     
 </body>
 </html>
