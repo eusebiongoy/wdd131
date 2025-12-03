@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Eusebio Ngoy Banza">
-    <meta name="Description"
-        content="This page talk about the Charitable, about the works done by this group and some the projects a head">
-    <title>charitable.org</title>
+    <meta name="Description" content="This page talk about the Charitable, about the works done by this group and some the projects a head">
+    <title>Home Page</title>
     <link rel="stylesheet" href="styles/siteplan.css">
     <script src="scripts/siteplan.js" defer></script>
     <script src="" defer></script>
@@ -17,42 +16,58 @@
         rel="stylesheet">
 </head>
 <body>
-    <p>THE HEADER</p>
-    <header> 
-        <div class="logo-box">
-            <img src="images/charitable.jpg" alt="the charitable" width="128" height="128">
-        </div>
+    <header>
+        <img src="images/charitable.jpg" alt="the charitable logo" width="128" height="128">
         <nav>
-            <a href="siteplan.html">HOME</a>
-            <a href="ourteams.html">OUR TEAM</a>
-            <a href="projects.html">PROJECTS</a>
-            <a href="contact.html">CONTACT</a>
+            <a href="siteplan.html">Home</a>
+            <a href="Team.html">Teams</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
-
-
     </header>
-    <P>THE MAIN</P>
-    <main>
-        <div id="banner-box">
-            <section class="banner">
-                <h1>The Charitables</h1>
+<main>
+    <div class="hero">
+        <picture>
+            <source srcset="images/groups.webp" media="(min-width: 600px)" width="600" height="500">
+            <img src="images/help.webp" alt="we are together" width="400" height="300">
+        </picture>
+        <h1>The Charitables Home Page</h1>
+    </div>
+    <div class="newsletter-container">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Will like to get latest news about us please Subscribe here</p>
+        <form action="works" method="post">
+            <input type="text" id="name" name="name" placeholder="your name " required>
+            <input type="email" id="email" name="email" placeholder="your email" required>
+        </form>
+    </div>
+    <div class="button-wrapper">
+        <a class="project" href="project.html">works</a>
+    </div>
+    <nav class="row">
+        <figure class="row">
+            <img src="images/fetching.jpg" alt="enjoying trip" loading="lazy" width="150" height="150">
+            <figcaption>Our Purpose is helping people to enjoy life</figcaption>
+        </figure>
+    
+        <figure class="row">
+            <img src="images/vision_well.jpg" alt="offers" loading="lazy" width="150" height="150">
+            <figcaption>Our vision is assisting people</figcaption>
+        </figure>
 
-            </section>
-
-        </div>
-        <h2>HTML Document</h2>
-        <embed src="images/project.pdf.pdf" type="application/pdf" width="100%" height="300px">
-
+        <figure class="row">
+            <img src="images/drilling.jpg" alt="offers" loading="lazy" width="150" height="150">
+            <figcaption>Serving people with potable water</figcaption>
+        </figure>
+    </nav>
     </main>
-    <p>THE FOOTER</p>
-
+       
     <footer>
         <p>&copy; 2025
             <span id="year"></span>&#10070; Eusebio Ngoy &#10070; Lubumbashi, DR. Congo
         </p>
         <p id="lastModified"></p>
-        
     </footer>
-
+    
 </body>
 </html>
