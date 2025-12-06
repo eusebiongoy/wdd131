@@ -116,7 +116,7 @@ h1 {
             &:checked {
                 color: white;
                 border-color: green;
-                background:$green;
+                background:green;
     
                 &::before {
                     opacity: 1;
@@ -126,7 +126,7 @@ h1 {
                     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
                 }
             }
-        }
+        
     
         label {
             position: relative;
