@@ -21,8 +21,8 @@
     <main class="box">
     <form action="review.html" method="get">
         <div class="quiz-item box">
-        <select id="product" name="product name" required>
-            <label for="product">Product Name</label>
+        <select id="product" name="product-name" required>
+            <label for="product name">Product Name</label>
             <option value="" selected disabled>Select a Product ...</option>
             <option value="a">product 1</option>
             <option value="b">product 2</option>
@@ -30,7 +30,7 @@
         </select>
         </div>
             <div class="quiz-item box">
-                <label>Overall Rating</label>
+                <label for="Overall">Overall Rating</label>
                 <div class="stars">
                     <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
                     <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
@@ -45,8 +45,8 @@
                 <input type="date" id="installationDate" name="installation_date" required>
             </div>
 
-            <p>Which features did you find useful in the product?(Check all that apply)</p>
         <fieldset>
+            <h2>Which features did you find useful in the product?(Check all that apply)</h2>
             <div>
                 <input type="checkbox" id="feature1" name="useful_features" value="durability">
                 <label for="feature1" data-content="durability">Durability</label>
