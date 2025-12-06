@@ -19,10 +19,10 @@
         <h1>Product Review</h1>
     </header>
     <main class="box">
-    <form action="review.html" method="get">
+        <form action="review.html" method="get">
         <div class="quiz-item box">
-            <select id="button" name="product-name" required>
-                <label>Product Name</label>
+            <select id="product-selection" name="product-name" required>
+                <label for="product-selection">Product Name</label>
                 <option value="" selected disabled>Select a Product ...</option>
                 <option value="a">product 1</option>
                 <option value="b">product 2</option>
@@ -39,6 +39,7 @@
                 <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
                 
             </div>
+        </div>
 
         <div class="quiz-item box">
             <label for="installationDate">Date of installation:</label>
@@ -78,7 +79,7 @@
             </div>
         </fieldset>
         <button type="submit">Post Review</button>
-    </form>
+        </form>
     </main>
     <footer>
         <p>&copy; 2025
