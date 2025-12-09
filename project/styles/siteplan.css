@@ -175,6 +175,21 @@ td {
     border: 1px solid rgb(22, 13, 13);
     padding: 8px 10px;
 }
+picture img {
+    width: 100%;
+    background-color: #000;
+    animation: fade 8s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 footer p {
     text-align: center;
     font-size: 1rem;
