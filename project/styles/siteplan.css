@@ -51,7 +51,7 @@ h2 {
         background-color: var(--accent2-color);
     }
     h1{
-        font-size: 2px;
+        font-size: 2rem;
         background-color: aliceblue;
         color: #470f0f;
     }
